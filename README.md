@@ -25,26 +25,26 @@ The data set contains 1018 entries for US monthly energy production from the yea
 ### PMDARIMA Model
 PMDARIMA provides an auto_arima function that automatically selects the optimal ARIMA model for a given time series. The best-fitted SARIMA model is identified as ARIMA(0,1,2)(2,1,1,12). The model captures the temporal patterns and seasonality in the time series, making it a valuable tool for forecasting future values.
 
-![Example Image](./images/pmdarima.png)
+![Example Image](./images/PMDarima.PNG)
 
 From the plot of predictions and actual values we see that the predicted values track the actual values closely, with only a few minor deviations. 
 
 ### Facebook Prophet
 Facebook Prophet is a forecasting tool designed for time series data that exhibits patterns such as trends and seasonality. The flexibility to incorporate holidays, custom seasonality, and other factors makes it a powerful tool for a wide range of forecasting scenarios.
 
-![Example Image](./images/fb_prophet.png)
+![Example Image](./images/fb.PNG)
 
 ### Tuned Facebook Prophet
 When tuning a Facebook Prophet model, the focus is on adjusting hyperparameters and optimizing the model for better forecasting performance. 
 
-![Example Image](./images/Tuned_fb_prophet.png)
+![Example Image](./images/fb_tuned.PNG)
 
 ### Forecasting Future Energy Production
 It appears that the model managed to capture some of the trend of energy production and short term fluctuations such as the seasonal peaks and valleys.
 
 The model however appears to underestimate the uncertainty in the forecasts which may be as a result of insufficient data, or lack of other factors that influence energy production such as economic fluctuations.
 
-![Example Image](./images/forecast.png)
+![Example Image](./images/Forecast.PNG)
 
 ## Conclusion
 This study aimed to predict energy production trends, enabling a smooth transition towards renewable sources while emphasizing accurate forecasts in the face of shifting demand and supply dynamics.
