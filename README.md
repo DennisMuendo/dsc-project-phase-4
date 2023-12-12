@@ -25,7 +25,7 @@ The data set contains 1018 entries for US monthly energy production from the yea
 ### PMDARIMA Model
 PMDARIMA provides an auto_arima function that automatically selects the optimal ARIMA model for a given time series. The best-fitted SARIMA model is identified as ARIMA(0,1,2)(2,1,1,12). The model captures the temporal patterns and seasonality in the time series, making it a valuable tool for forecasting future values.
 
-![Example Image](./images/PMDarima.PNG)
+![Example Image](./images/PMDarima_model.PNG)
 
 From the plot of predictions and actual values we see that the predicted values track the actual values closely, with only a few minor deviations. 
 
@@ -44,7 +44,7 @@ It appears that the model managed to capture some of the trend of energy product
 
 The model however appears to underestimate the uncertainty in the forecasts which may be as a result of insufficient data, or lack of other factors that influence energy production such as economic fluctuations.
 
-![Example Image](./images/Forecast.PNG)
+![Example Image](./images/Forecast_future.PNG)
 
 ## Conclusion
 This study aimed to predict energy production trends, enabling a smooth transition towards renewable sources while emphasizing accurate forecasts in the face of shifting demand and supply dynamics.
